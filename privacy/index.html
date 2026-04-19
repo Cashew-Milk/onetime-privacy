@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OneTime Privacy Policy</title>
+  <meta name="description" content="Privacy policy for the OneTime Chrome extension.">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4f6f8;
+      --surface: #ffffff;
+      --ink: #1e2933;
+      --muted: #5a6b78;
+      --line: #d8e0e6;
+      --accent: #2c6a3d;
+      --accent-ink: #173321;
+      --shadow: 0 18px 48px rgba(22, 31, 38, 0.10);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Inter", Arial, sans-serif;
+      line-height: 1.65;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(44, 106, 61, 0.10), transparent 34%),
+        linear-gradient(180deg, #eef3f0 0%, var(--bg) 28%, #eef2f5 100%);
+      min-height: 100vh;
+    }
+
+    main {
+      width: min(900px, calc(100% - 32px));
+      margin: 40px auto;
+      padding: 0;
+    }
+
+    article {
+      background: var(--surface);
+      border: 1px solid rgba(216, 224, 230, 0.95);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    header {
+      padding: 40px 40px 24px;
+      background:
+        linear-gradient(135deg, rgba(44, 106, 61, 0.10), rgba(44, 106, 61, 0.02)),
+        linear-gradient(180deg, #ffffff, #f9fbfa);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .toplink {
+      display: inline-block;
+      margin-bottom: 18px;
+      color: var(--accent);
+      font-size: 0.95rem;
+      text-decoration: none;
+    }
+
+    .toplink:hover,
+    .toplink:focus-visible {
+      text-decoration: underline;
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.08;
+      color: var(--accent-ink);
+    }
+
+    .lede {
+      margin: 16px 0 0;
+      max-width: 60ch;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .meta {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    section {
+      padding: 28px 40px;
+      border-top: 1px solid var(--line);
+    }
+
+    section:first-of-type {
+      border-top: 0;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.2rem;
+      color: var(--accent-ink);
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    p:last-child,
+    ul:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin: 0 0 14px;
+      padding-left: 20px;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    footer {
+      padding: 22px 40px 34px;
+      color: var(--muted);
+      font-size: 0.92rem;
+      border-top: 1px solid var(--line);
+      background: #fbfcfc;
+    }
+
+    @media (max-width: 720px) {
+      main {
+        width: min(100%, calc(100% - 18px));
+        margin: 10px auto 20px;
+      }
+
+      article {
+        border-radius: 12px;
+      }
+
+      header,
+      section,
+      footer {
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+
+      header {
+        padding-top: 24px;
+        padding-bottom: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <header>
+        <a class="toplink" href="../">Back to OneTime site</a>
+        <p class="eyebrow">OneTime</p>
+        <h1>Privacy Policy</h1>
+        <p class="lede">
+          OneTime is a Chrome extension that helps users import hours from an Excel workbook and read, preview,
+          fill, and delete Certinia PSA timecards. It handles only the information needed to provide those features.
+        </p>
+        <p class="meta">Effective date: April 15, 2026</p>
+      </header>
+
+      <section>
+        <h2>Information OneTime Handles</h2>
+        <p>OneTime may handle the following information:</p>
+        <ul>
+          <li>Spreadsheet data selected by the user, including project codes, ticket IDs, step or task names, comments, dates, and hour values.</li>
+          <li>Certinia page data needed to read, preview, fill, or delete timecards, including project names, task or milestone information, approval status, existing timecard values, and related page context.</li>
+          <li>Limited browsing context needed to confirm that the active tab is a supported Certinia page, such as the current tab's URL or domain.</li>
+          <li>Extension preferences and local state, such as theme, layout, onboarding state, imported session state, selected items, and local performance data.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>How OneTime Uses Information</h2>
+        <p>OneTime uses this information only to:</p>
+        <ul>
+          <li>Parse the workbook selected by the user.</li>
+          <li>Show previews, validation messages, and local debug information.</li>
+          <li>Match workbook entries to Certinia projects and tasks.</li>
+          <li>Read, create, update, and delete timecard entries in the user's Certinia environment at the user's direction.</li>
+          <li>Store preferences and temporary session state locally so the extension continues working between popup openings.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>How Information Is Stored and Shared</h2>
+        <ul>
+          <li>OneTime does not send user data to the developer.</li>
+          <li>OneTime does not sell, rent, or transfer user data to advertisers, data brokers, analytics providers, or other third parties.</li>
+          <li>OneTime does not use remote servers operated by the developer.</li>
+          <li>Data handled by OneTime remains local to the user's browser, except for communications with the user's own Certinia or Salesforce environment that are necessary to complete the actions requested by the user.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Data Retention</h2>
+        <ul>
+          <li>Preference data and certain local extension data may remain in Chrome extension storage until the user clears extension data or uninstalls the extension.</li>
+          <li>Temporary session data may be retained in Chrome session storage during the active browser session to preserve workflow state.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>User Choices</h2>
+        <ul>
+          <li>Users choose whether to load a workbook into OneTime.</li>
+          <li>Users choose whether to run OneTime on a supported Certinia page.</li>
+          <li>Users can remove the extension or clear its stored data through Chrome's extension management tools.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Security</h2>
+        <p>
+          OneTime is designed to operate only on supported Certinia or Salesforce pages and to use Chrome extension
+          storage for local state. The extension relies on the browser's and the user's Certinia environment's
+          security controls for local processing and secure page communication.
+        </p>
+      </section>
+
+      <section>
+        <h2>Changes to This Policy</h2>
+        <p>
+          This privacy policy may be updated from time to time to reflect product changes. The current version will
+          be posted at this URL.
+        </p>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>
+          For privacy questions about OneTime, contact
+          <a href="mailto:onetime.extension@gmail.com">onetime.extension@gmail.com</a>.
+        </p>
+      </section>
+
+      <footer>
+        This page is intended to satisfy the Chrome Web Store privacy policy URL requirement for the OneTime extension.
+      </footer>
+    </article>
+  </main>
+</body>
+</html>
